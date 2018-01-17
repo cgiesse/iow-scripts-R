@@ -11,6 +11,12 @@ read_netcdf <- function(filename,var_input,var_output=var_input){
   #  var_output <- c("saltflux","ice","time")
   #  filename <- "ice_day_1986.nc"
   #  var_list <- read_netcdf(filename,var_input,var_ouput)
+  #
+  #  #if individual variables preferred, delete list afterwards
+  #  for (i in 1:length(var_input)){
+  #    assign(var_output[i],var_list[[i]])
+  #  }
+  #  rm(var_list)
   
   library(ncdf4)
   
